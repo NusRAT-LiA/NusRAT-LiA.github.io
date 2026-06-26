@@ -1,0 +1,111 @@
+export type Publication = {
+  title: string
+  authors: string
+  affiliations: string[]
+  venue: string
+  year: string
+  tags?: string[]
+  photo?: string
+  // Optional link buttons (rendered below the venue row when present)
+  arxiv?: string
+  acl?: string
+  poster?: string
+  posterType?: string
+  github?: string
+  website?: string
+  jama?: string
+}
+
+// Main research publications
+export const mainPublications: Publication[] = [
+  {
+    title: "Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning",
+    authors: "Nusrat Jahan Lia; Aritra Mazumder",
+    affiliations: [ "University of Dhaka","University of Utah"],
+    venue: " ",
+    year: "2026",
+    arxiv: "https://arxiv.org/pdf/2606.20954",
+    photo: "research/lre.png",
+  },
+  {
+    title: "AGENTCOLLABBENCH: Diagnosing When Good Agents Make Bad Collaborators",
+    authors: "Aritra Mazumder; Shubhashis Roy Dipta; Nusrat Jahan Lia; et al.",
+    affiliations: ["University of Utah", "University of Maryland, Baltimore County", "University of Virginia", "University of Dhaka"],
+    venue: " ",
+    year: "2026",
+    arxiv: "https://arxiv.org/pdf/2605.08647",
+    photo: "research/agentcollab.png",
+    website: "https://www.aritramazumder.com/agentcollabbench/"
+  },
+  {
+    title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
+    authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
+    affiliations: ["University of Dhaka", "University of Maryland"],
+    venue: "mellm @ ACL 2026; Published: ACL Anthology",
+    year: "2026",
+    arxiv: "https://arxiv.org/abs/2602.17469",
+    photo: "research/bialign.png",
+  },
+  {
+    title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles",
+    authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta, PhD; Dr. Abdullah Khan Zehady; Naymul Islam; Madhusodan Chakraborty; Abdullah Al Wasif",
+    affiliations: ["University of Dhaka", "University of Maryland","Purdue University", "Perspectivity"],
+    venue: "Accepted: AACL IJCNLP BLP; Published: ACL Anthology",
+    year: "2025",
+    acl: "https://aclanthology.org/2025.banglalp-1.5/",
+    photo: "research/fig1.png",
+    website:"https://nusrat-lia.github.io/BanglaBias/"
+  },
+  {
+    title: "Exploring Cross-Lingual Knowledge Transfer via Transliteration-Based MLM Fine-Tuning for Critically Low-resource Chakma Language",
+    authors: "Adity Khisa; Nusrat Jahan Lia; Tasnim Mahfuz Nafis; Zarif Masud; Tanzir Pial, PhD; Dr.Shebuti Rayana; Dr.Ahmedul Kabir",
+    affiliations: ["University of Dhaka", "BARTA", "State University of New York, Old Westbury", "Stony Brook University", "Toronto Metropolitan University"],
+    venue: "Accepted: AACL IJCNLP BLP; Published: ACL Anthology",
+    year: "2025",
+    acl: "https://aclanthology.org/2025.banglalp-1.23/",
+    photo: "research/chakma.png",
+  },
+]
+
+// Contribution section - Digital health and adult attitude work
+export const contributionPublications: Publication[] = [
+  {
+    title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
+    authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD; Md Mamunur Rashid",
+    affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute","University of Washington", "University of Dhaka", "ITHRA"],
+    venue: "Accepted, Published: The Journal of American Medical Association; doi: 10.1001/jamapediatrics.2025.5736",
+    year: "2025",
+    jama: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2843672",
+    photo: "research/jama.png",
+  },
+  {
+    title: "Does Gaming Disorder Symptom Status Predict Poorer Sleep Quality?",
+    authors: "Nusrat Jahan Lia; Lauren Hale, PhD; Justin Thomas, PhD; Dimitri A. Christakis, MD, MPH; Mamunar Rashid, PhD",
+    affiliations: ["University of Dhaka", "Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute", "University of Washington", "ITHRA"],
+    venue: "Accepted: World Sleep 2025, Singapore",
+    year: "2025",
+    poster: "posters/world-sleep.png",
+    posterType: "png",
+    photo: "posters/world-sleep.png",
+  },
+  {
+    title: 'Does Spending "Too Much Time Online" Predict Sleep Health and Mental Health?',
+    authors: "Lauren Hale, PhD; Nusrat Jahan Lia; Sohailul Islam Alvi; Gina Marie Mathew, PhD; Dimitri A. Christakis, MD, MPH; Mamunar Rashid, PhD; Yasmin Aljedawi; Melisa Valle, PhD",
+    affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute", "University of Dhaka", "University of Washington", "Imperial College London", "ITHRA"],
+    venue: "Accepted: Association of Professional Sleep Societies. Seattle, Washington, USA",
+    year: "2025",
+    poster: "posters/sleep2025.svg",
+    posterType: "svg",
+    photo: "posters/sleep2025.svg",
+  },
+  {
+    title: "International Public Opinion on Digital Media Use for Youth and Schools",
+    authors: "Lauren Hale, PhD; Nusrat Jahan Lia; Sohailul Islam Alvi; Gina Marie Mathew, PhD; Dimitri A. Christakis, MD, MPH; Mamunar Rashid, PhD; Yasmin Aljedawi; Melisa Valle, PhD",
+    affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute", "University of Dhaka", "ITHRA", "University of Washington", "Imperial College London"],
+    venue: "Accepted: Digital Media and Developing Minds International Scientific Congress, Washington DC",
+    year: "2025",
+    poster: "posters/CS2025Poster_Hale.svg",
+    posterType: "svg",
+    photo: "posters/CS2025Poster_Hale.svg",
+  },
+]
