@@ -236,6 +236,22 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Education Section */}
+            <div className="order-9 space-y-3 bg-card border rounded-lg p-4 w-full">
+              <h3 className="font-semibold text-sm">Education</h3>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                  <Image src="collab/du.png" alt="University of Dhaka" fill className="object-contain" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-medium truncate">University of Dhaka</p>
+                  <p className="text-xs text-muted-foreground">B.Sc. in Software Engineering</p>
+                  <p className="text-xs text-muted-foreground">May 2026 · CGPA 3.8/4 (Top 5)</p>
+                </div>
+              </div>
+            </div>
+
+
             {/* Courses & Teaching Section */}
             <div className="order-7 space-y-3 bg-card border rounded-lg p-4 w-full">
               <div className="flex items-center justify-between">
@@ -434,21 +450,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Education Section */}
-            <div className="order-9 space-y-3 bg-card border rounded-lg p-4 w-full">
-              <h3 className="font-semibold text-sm">Education</h3>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
-                  <Image src="collab/du.png" alt="University of Dhaka" fill className="object-contain" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-medium truncate">University of Dhaka</p>
-                  <p className="text-xs text-muted-foreground">B.Sc. in Software Engineering</p>
-                  <p className="text-xs text-muted-foreground">May 2026 · CGPA 3.8/4 (Top 5)</p>
-                </div>
-              </div>
-            </div>
-
+            
             {/* Featured Projects Section */}
             <div className="order-10 space-y-3 w-full">
               <div className="flex items-center justify-between px-1">
@@ -506,7 +508,7 @@ export default function HomePage() {
 
              
               <p className="mb-6">
-              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
+              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
               </p>
 
               <p className="mb-6">

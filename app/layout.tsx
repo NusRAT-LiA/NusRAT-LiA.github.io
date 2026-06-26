@@ -9,9 +9,8 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nusrat Jahan Lia - AI Researcher, Educator, LLM Engineer",
-  description:
-    "Personal academic portfolio of Nusrat Jahan Lia, exploring the intersection of AI, education, and human-computer interaction.",
+  title: "Nusrat Jahan Lia - AI Researcher",
+  description: "",
 }
 
 export default function RootLayout({

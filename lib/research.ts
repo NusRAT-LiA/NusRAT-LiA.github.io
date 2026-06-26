@@ -40,7 +40,7 @@ export const mainPublications: Publication[] = [
   {
     title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
     authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
-    affiliations: ["University of Dhaka", "University of Maryland"],
+    affiliations: ["University of Dhaka", "University of Maryland, Baltimore County"],
     venue: "mellm @ ACL 2026; Published: ACL Anthology",
     year: "2026",
     arxiv: "https://arxiv.org/abs/2602.17469",
@@ -49,7 +49,7 @@ export const mainPublications: Publication[] = [
   {
     title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles",
     authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta, PhD; Dr. Abdullah Khan Zehady; Naymul Islam; Madhusodan Chakraborty; Abdullah Al Wasif",
-    affiliations: ["University of Dhaka", "University of Maryland","Purdue University", "Perspectivity"],
+    affiliations: ["University of Dhaka", "University of Maryland, Baltimore County","Purdue University", "Perspectivity"],
     venue: "Accepted: AACL IJCNLP BLP; Published: ACL Anthology",
     year: "2025",
     acl: "https://aclanthology.org/2025.banglalp-1.5/",
