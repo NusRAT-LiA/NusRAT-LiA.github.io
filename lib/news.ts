@@ -20,7 +20,7 @@ export const news: NewsItem[] = [
       { text: "Three GOLD", key: true },
       { text: " in the" },
       { text: " Asia Pacific Olympiad in AI", key: true },
-      { text: " other Top contenders being CHINA, JAPAN, RUSSIA, AUSTRALIA... " },
+      { text: " other Top contenders being CHINA, JAPAN, RUSSIA, AUSTRALIA...(Proud Instructor Moment!) " },
       { text: "see", key: true, href: "https://apoai.org/apoai2026" },
     ],
   },
@@ -43,7 +43,7 @@ export const news: NewsItem[] = [
       { text: "AgentCollabBench", key: true },
       { text: " accepted at FAGEN" },
       { text: "@ICML 2026", key: true },
-      { text: " (Non archival) - 900 tasks that catch when a multi-agent LLM team's final answer is right but collaboartive reasoning was broken." },
+      { text: " (Non archival) - 900 tasks that catch when a multi-agent LLM team's final answer is right but collaborative reasoning was broken." },
     ],
   },
   {

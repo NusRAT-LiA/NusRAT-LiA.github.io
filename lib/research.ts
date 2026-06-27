@@ -71,7 +71,7 @@ export const mainPublications: Publication[] = [
 export const contributionPublications: Publication[] = [
   {
     title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
-    authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD; Md Mamunur Rashid",
+    authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD",
     affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute","University of Washington", "University of Dhaka", "ITHRA"],
     venue: "Accepted, Published: The Journal of American Medical Association; doi: 10.1001/jamapediatrics.2025.5736",
     year: "2025",
