@@ -140,15 +140,27 @@ export default function HomePage() {
                   >
                     <p className="font-semibold text-xs flex-shrink-0 w-16">{item.date}</p>
                     <p className="text-xs">
-                      {item.content.map((segment, i) =>
-                        segment.key ? (
-                          <span key={i} className="text-[#2bb673]">
+                      {item.content.map((segment, i) => {
+                        const classes = [
+                          segment.key ? "text-[#2bb673]" : "",
+                          segment.href ? "underline hover:opacity-80" : "",
+                        ].filter(Boolean).join(" ")
+                        return segment.href ? (
+                          <a
+                            key={i}
+                            href={segment.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={classes}
+                          >
+                            {segment.text}
+                          </a>
+                        ) : (
+                          <span key={i} className={classes}>
                             {segment.text}
                           </span>
-                        ) : (
-                          <span key={i}>{segment.text}</span>
-                        ),
-                      )}
+                        )
+                      })}
                     </p>
                   </div>
                 ))}
@@ -508,11 +520,11 @@ export default function HomePage() {
 
              
               <p className="mb-6">
-              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
+              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka (Top 5) where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
               </p>
 
               <p className="mb-6">
-                Entrepreneurially, I was a <strong>founding memeber</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection that empower citizens with nuanced, research-backed insights.
+                Entrepreneurially, I was a <strong>founding memeber</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection that empower citizens with research agents.
               </p>
               
               <p className="mb-6">

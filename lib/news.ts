@@ -2,15 +2,28 @@ export interface NewsSegment {
   text: string
   /** When true, this segment is a major keyword and is rendered in mint green. */
   key?: boolean
+  /** When set, this segment renders as an underlined link opening in a new tab. */
+  href?: string
 }
 
 export interface NewsItem {
   date: string
-  /** Ordered text segments; `key` segments are highlighted. */
+  /** Ordered text segments; `key` segments are highlighted, `href` segments render as underlined links. */
   content: NewsSegment[]
 }
 
 export const news: NewsItem[] = [
+  {
+    date: "Jun 27, 2026",
+    content: [
+      { text: "Bangladesh won " },
+      { text: "Three GOLD", key: true },
+      { text: " in the" },
+      { text: " Asia Pacific Olympiad in AI", key: true },
+      { text: " other Top contenders being CHINA, JAPAN, RUSSIA, AUSTRALIA... " },
+      { text: "see", key: true, href: "https://apoai.org/apoai2026" },
+    ],
+  },
   {
     date: "Jun 18, 2026",
     content: [
