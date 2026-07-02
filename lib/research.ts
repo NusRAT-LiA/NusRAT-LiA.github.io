@@ -67,6 +67,36 @@ export const mainPublications: Publication[] = [
   },
 ]
 
+// Ongoing work — active projects with a working title and a summary.
+export type OngoingWork = {
+  title: string
+  affiliations: string[]
+  /** Short summary shown in the "See Details" dialog. */
+  summary: string
+  photo?: string
+}
+
+export const ongoingWork: OngoingWork[] = [
+  {
+    title: "A Difficulty-Parametric Diagnostic Benchmark for Tool-Using Agents with 11 Failure Attribution, including security collapse in a Simulated World",
+    affiliations: ["UMBC"],
+    summary:
+      "This is an agent benchmark built on a simulated world where we make several failure modes co-active in a single hard task, so a heuristic that dodges one triggers another. The Failure modes are - Acted on a wrong reading of the instruction, Violated a guardrail to maximize a stated metric, Took an action the actor lacked permission for, Followed an adversarial embedded instruction and many more.",
+  },
+  {
+    title: "When Confidence Becomes Misleading: Runtime Monitoring in Multi-Step LLM Agents",
+    affiliations: ["University of Utah"],
+    summary:
+      "Investigate trajectory-dependent confidence estimation in multi-step LLM agents by developing runtime monitors and adaptive controllers that use hidden-state and output-level signals for failure detection and compute-efficient execution.",
+  },
+  {
+    title: "AgentCheck",
+    affiliations: ["University of Utah"],
+    summary:
+      "An open-source interactive stress-testing workbench that combine a validated fault injection engine, a human-validated behavioral scoring pipeline, and an interactive diagnostic dashboard for comparative agent profiling",
+  },
+]
+
 // Contribution section - Digital health and adult attitude work
 export const contributionPublications: Publication[] = [
   {

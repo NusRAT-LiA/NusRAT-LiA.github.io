@@ -520,7 +520,7 @@ export default function HomePage() {
 
              
               <p className="mb-6">
-              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka (Top 5) where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
+              I recently graduated (Top 5) with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
               </p>
 
               <p className="mb-6">

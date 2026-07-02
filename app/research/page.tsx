@@ -3,9 +3,17 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { FileText, ChevronDown, Github, Globe } from "lucide-react"
 import { useState } from "react"
-import { mainPublications, contributionPublications } from "@/lib/research"
+import { mainPublications, contributionPublications, ongoingWork } from "@/lib/research"
 
 export default function ResearchPage() {
 
@@ -50,6 +58,19 @@ export default function ResearchPage() {
           <div className="space-y-3">
             {contributionPublications.map((pub, index) => (
               <ContributionItem key={index} pub={pub} selectedPoster={selectedPoster} setSelectedPoster={setSelectedPoster} formatAuthors={formatAuthors} />
+            ))}
+          </div>
+        </section>
+
+        {/* Ongoing Work Section */}
+        <section className="mt-16">
+          <div className="space-y-2 mb-4">
+            <h2 className="text-lg font-bold">Ongoing Work</h2>
+          </div>
+
+          <div className="space-y-3">
+            {ongoingWork.map((item, index) => (
+              <OngoingWorkItem key={index} item={item} />
             ))}
           </div>
         </section>
@@ -268,6 +289,69 @@ function ContributionItem({ pub, selectedPoster, setSelectedPoster, formatAuthor
                 ))}
               </div>
             )}
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
+// Ongoing work item — title, optional photo, affiliations, and a See Details dialog.
+function OngoingWorkItem({ item }: { item: any }) {
+  return (
+    <Card className="hover:shadow-md transition-shadow">
+      <CardContent className="p-4">
+        <div className="flex flex-col sm:flex-row gap-3 items-start">
+          {item.photo && (
+            <div className="flex-shrink-0 w-full sm:w-32 lg:w-28">
+              <img
+                src={item.photo}
+                alt={item.title}
+                className="w-full h-auto sm:h-28 lg:h-24 object-contain rounded"
+              />
+            </div>
+          )}
+
+          <div className="flex-1 min-w-0 space-y-2">
+            <h3 className="font-semibold text-sm leading-tight">{item.title}</h3>
+
+            {item.affiliations && item.affiliations.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {item.affiliations.map((aff: string, idx: number) => (
+                  <Badge key={idx} variant="secondary" className="text-[10px] px-1.5 py-0">
+                    {aff}
+                  </Badge>
+                ))}
+              </div>
+            )}
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="sm" variant="outline" className="h-7 text-xs">
+                  See Details
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-lg">{item.title}</DialogTitle>
+                  <DialogDescription>Ongoing work</DialogDescription>
+                </DialogHeader>
+                <div className="space-y-4">
+                  {item.affiliations && item.affiliations.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                      {item.affiliations.map((aff: string, idx: number) => (
+                        <Badge key={idx} variant="secondary" className="text-xs">
+                          {aff}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
+                  <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {item.summary}
+                  </p>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </CardContent>

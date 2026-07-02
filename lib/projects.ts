@@ -44,7 +44,7 @@ export const projects: Project[] = [
    },
    {
     id: "fed",
-    title: "Federated Code Recommendation System",
+    title: "Privacy Preserved Federated Code Recommendation System",
     description:
       "This is a distributed RAG (Retrieval-Augmented Generation) system that enables organizations to share code recommendations while preserving privacy",
     fullDescription:
