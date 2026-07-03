@@ -117,7 +117,7 @@ export default function HomePage() {
             <div className="order-1 relative w-full">
               <div className="w-2/3 mx-auto aspect-square relative overflow-hidden rounded-2xl">
                 <Image
-                  src="me/me-black.png?height=500&width=500"
+                  src="me/me-n.png?height=500&width=500"
                   alt="Nusrat Lia"
                   fill
                   className="object-cover"
