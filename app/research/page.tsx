@@ -11,7 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { FileText, ChevronDown, Github, Globe } from "lucide-react"
+import { FileText, ChevronDown, Github, Globe, Play } from "lucide-react"
 import { useState } from "react"
 import { mainPublications, contributionPublications, ongoingWork } from "@/lib/research"
 
@@ -160,7 +160,7 @@ function MainPublicationItem({ pub, selectedPoster, setSelectedPoster, formatAut
 // Shared link buttons, rendered below the venue ("Accepted...") row.
 // Only the links present on a publication are shown.
 function PublicationLinks({ pub, setSelectedPoster }: any) {
-  const hasAny = pub.arxiv || pub.acl || pub.poster || pub.github || pub.website || pub.jama
+  const hasAny = pub.arxiv || pub.acl || pub.poster || pub.github || pub.website || pub.jama || pub.demo
   if (!hasAny) return null
 
   return (
@@ -215,6 +215,14 @@ function PublicationLinks({ pub, setSelectedPoster }: any) {
           <a href={pub.jama} target="_blank" rel="noopener noreferrer">
             <Globe className="w-3 h-3 mr-1" />
             Jama(Q1)
+          </a>
+        </Button>
+      )}
+      {pub.demo && (
+        <Button size="sm" variant="outline" className="h-7 text-xs" asChild>
+          <a href={pub.demo} target="_blank" rel="noopener noreferrer">
+            <Play className="w-3 h-3 mr-1" />
+            Demo
           </a>
         </Button>
       )}

@@ -10,14 +10,28 @@ export type Publication = {
   arxiv?: string
   acl?: string
   poster?: string
+  demo?: string
   posterType?: string
   github?: string
   website?: string
   jama?: string
+  
 }
 
 // Main research publications
 export const mainPublications: Publication[] = [
+  {
+    title: "AgentCheck: A Reproduce–Intervene–Mitigate Workbench for LLM Agents over MCP",
+    authors: "Aritra Mazumder; Nusrat Jahan Lia",
+    affiliations: [ "University of Utah", "University of Dhaka"],
+    venue: " ",
+    year: "2026",
+    arxiv: "https://arxiv.org/pdf/2607.11098",
+    photo: "research/agentcheck.png",
+    demo:"https://www.youtube.com/watch?v=h_xmHC-hILU",
+    github:"https://github.com/aritra741/AgentCheck"
+    
+  },
   {
     title: "Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning",
     authors: "Nusrat Jahan Lia; Aritra Mazumder",
@@ -26,6 +40,7 @@ export const mainPublications: Publication[] = [
     year: "2026",
     arxiv: "https://arxiv.org/pdf/2606.20954",
     photo: "research/lre.png",
+    github: "https://github.com/NusRAT-LiA/LRE"
   },
   {
     title: "AGENTCOLLABBENCH: Diagnosing When Good Agents Make Bad Collaborators",
@@ -36,6 +51,7 @@ export const mainPublications: Publication[] = [
     arxiv: "https://arxiv.org/pdf/2605.08647",
     photo: "research/agentcollab.png",
     website: "https://www.aritramazumder.com/agentcollabbench/"
+
   },
   {
     title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
@@ -43,8 +59,9 @@ export const mainPublications: Publication[] = [
     affiliations: ["University of Dhaka", "University of Maryland, Baltimore County"],
     venue: "mellm @ ACL 2026; Published: ACL Anthology",
     year: "2026",
-    arxiv: "https://arxiv.org/abs/2602.17469",
+    // arxiv: "https://arxiv.org/abs/2602.17469",
     photo: "research/bialign.png",
+    acl:"https://aclanthology.org/2026.mellm-1.12/",
   },
   {
     title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles",
@@ -88,13 +105,7 @@ export const ongoingWork: OngoingWork[] = [
     affiliations: ["University of Utah"],
     summary:
       "Investigate trajectory-dependent confidence estimation in multi-step LLM agents by developing runtime monitors and adaptive controllers that use hidden-state and output-level signals for failure detection and compute-efficient execution.",
-  },
-  {
-    title: "AgentCheck",
-    affiliations: ["University of Utah"],
-    summary:
-      "An open-source interactive stress-testing workbench that combine a validated fault injection engine, a human-validated behavioral scoring pipeline, and an interactive diagnostic dashboard for comparative agent profiling",
-  },
+  }
 ]
 
 // Contribution section - Digital health and adult attitude work
