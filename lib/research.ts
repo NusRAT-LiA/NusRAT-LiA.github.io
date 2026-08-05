@@ -54,6 +54,17 @@ export const mainPublications: Publication[] = [
 
   },
   {
+    title: "Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms",
+    authors: "Naymul Islam, Nusrat Jahan Lia, Shubhashis Roy Dipta (equal first authors) et al.",
+    affiliations: ["University of Dhaka", "University of Maryland, Baltimore County", "BanglaLLM"],
+    venue: " ",
+    year: "2026",
+    // arxiv: "https://arxiv.org/pdf/2605.08647",
+    photo: "research/banglasafe.png",
+    website: "https://banglallm.github.io/banglasafe/index.html"
+
+  },
+  {
     title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
     authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
     affiliations: ["University of Dhaka", "University of Maryland, Baltimore County"],
