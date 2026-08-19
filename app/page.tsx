@@ -178,6 +178,22 @@ export default function HomePage() {
                 </Button>
               </div>
               <div className="space-y-2">
+                {/* UToronto */}
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="collab/ut.png?height=40&width=40"
+                      alt="University of Toronto"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Research Assistant</p>
+                    <p className="text-xs text-muted-foreground truncate">University of Toronto, CA</p>
+                    <p className="text-xs text-muted-foreground">Aug 2026 - Present</p>
+                  </div>
+                </div>
                 {/* Fatima */}
                 <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
                   <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
@@ -513,7 +529,9 @@ export default function HomePage() {
               <p className="mb-6">
                 My work lies in <strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
               </p>
-
+              <p className="mb-6">
+                I have started working as a <strong>Research Assistant</strong> at the <strong>University of Toronto</strong> (working with Dr. Ishtiaque Ahmed and Sheza Munir); and a <strong>Research Fellow</strong> at <strong>Fatima Institute for Global AI Research, California</strong>.
+              </p>
               <p className="mb-6">
                I was a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong>.
               </p>

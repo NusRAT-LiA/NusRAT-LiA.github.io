@@ -14,6 +14,21 @@ export default function WorkPage() {
 
   const positions = [
     {
+      id: "ut",
+      title: "Research Assistant",
+      organization: "University of Toronto, CA (under Dr. Ishtiaque Ahmed)",
+      logo: "work/fatima.jpeg?height=80&width=80",
+      startDate: "2026-08",
+      endDate: null,
+      type: "Academic",
+      description:  [
+        "Research on sociotechnical AI, focusing on annotation subjectivity, LLM factuality, and AI safety",
+      ],
+      link: "https://www.ishtiaque.net/",
+      achievements: [
+      ],
+    },
+    {
       id: "fatima",
       title: "Research Fellow",
       organization: "Fatima Institute for Global AI Research",
