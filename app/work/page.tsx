@@ -17,7 +17,7 @@ export default function WorkPage() {
       id: "ut",
       title: "Research Assistant",
       organization: "University of Toronto, CA (under Dr. Ishtiaque Ahmed)",
-      logo: "work/fatima.jpeg?height=80&width=80",
+      logo: "collab/ut.png?height=80&width=80",
       startDate: "2026-08",
       endDate: null,
       type: "Academic",
@@ -31,7 +31,7 @@ export default function WorkPage() {
     {
       id: "fatima",
       title: "Research Fellow",
-      organization: "Fatima Institute for Global AI Research",
+      organization: "Fatima Institute for Global AI Research, California",
       logo: "work/fatima.jpeg?height=80&width=80",
       startDate: "2026-04",
       endDate: null,
