@@ -14,6 +14,16 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    date: "Aug 20, 2026",
+    content: [
+      { text: "LRE " , key: true, href: "https://arxiv.org/pdf/2606.20954" },
+      {text: "and" },
+      { text: " Register Shifts Break LLM Safety " , key: true, href: "https://banglallm.github.io/banglasafe/index.html" },
+      { text: "Accepted to " },
+      { text: "EMNLP'26!!!", key: true },
+    ],
+  },
+  {
     date: "Aug, 2026",
     content: [
       { text: "Joined as an RA at the " },

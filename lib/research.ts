@@ -36,7 +36,7 @@ export const mainPublications: Publication[] = [
     title: "Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning",
     authors: "Nusrat Jahan Lia; Aritra Mazumder",
     affiliations: [ "University of Dhaka","University of Utah"],
-    venue: " ",
+    venue: "EMNLP (Industry Track)",
     year: "2026",
     arxiv: "https://arxiv.org/pdf/2606.20954",
     photo: "research/lre.png",
@@ -46,7 +46,7 @@ export const mainPublications: Publication[] = [
     title: "AGENTCOLLABBENCH: Diagnosing When Good Agents Make Bad Collaborators",
     authors: "Aritra Mazumder; Shubhashis Roy Dipta; Nusrat Jahan Lia; et al.",
     affiliations: ["University of Utah", "University of Maryland, Baltimore County", "University of Virginia", "University of Dhaka"],
-    venue: " ",
+    venue: "FAGEN@ICML'26 (Non-archival), Archival at - A* ML Conference in-review",
     year: "2026",
     arxiv: "https://arxiv.org/pdf/2605.08647",
     photo: "research/agentcollab.png",
@@ -57,11 +57,11 @@ export const mainPublications: Publication[] = [
     title: "Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms",
     authors: "Naymul Islam, Nusrat Jahan Lia, Shubhashis Roy Dipta (equal first authors) et al.",
     affiliations: ["University of Dhaka", "University of Maryland, Baltimore County", "BanglaLLM"],
-    venue: " ",
     year: "2026",
     // arxiv: "https://arxiv.org/pdf/2605.08647",
     photo: "research/banglasafe.png",
-    website: "https://banglallm.github.io/banglasafe/index.html"
+    website: "https://banglallm.github.io/banglasafe/index.html",
+    venue: "EMNLP (Findings)",
 
   },
   {

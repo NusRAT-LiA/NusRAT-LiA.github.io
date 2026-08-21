@@ -135,7 +135,7 @@ function MainPublicationItem({ pub, selectedPoster, setSelectedPoster, formatAut
             )}
 
             <div className="flex items-center gap-4 text-xs">
-              <span className="font-medium">{pub.venue}</span>
+              <span className="font-medium"><strong>{pub.venue}</strong></span>
               <span className="text-muted-foreground">{pub.year}</span>
             </div>
 
