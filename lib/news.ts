@@ -16,11 +16,14 @@ export const news: NewsItem[] = [
   {
     date: "Aug 20, 2026",
     content: [
-      { text: "LRE " , key: true, href: "https://arxiv.org/pdf/2606.20954" },
+      { text: "3x EMNLP!!!", key: true },
+      { text: "(LRE" , href: "https://arxiv.org/pdf/2606.20954" },
+      { text: "  , " },
+      { text: "AgentCheck ",  href: "https://arxiv.org/pdf/2607.11098" },
       {text: "and" },
-      { text: " Register Shifts Break LLM Safety " , key: true, href: "https://banglallm.github.io/banglasafe/index.html" },
+      { text: " Register Shifts Break LLM Safety " ,  href: "https://banglallm.github.io/banglasafe/index.html" },
       { text: "Accepted to " },
-      { text: "EMNLP'26!!!", key: true },
+      { text: "EMNLP'26)", key: true },
     ],
   },
   {

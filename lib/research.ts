@@ -24,7 +24,7 @@ export const mainPublications: Publication[] = [
     title: "AgentCheck: A Reproduce–Intervene–Mitigate Workbench for LLM Agents over MCP",
     authors: "Aritra Mazumder; Nusrat Jahan Lia",
     affiliations: [ "University of Utah", "University of Dhaka"],
-    venue: " ",
+    venue: "EMNLP Demo",
     year: "2026",
     arxiv: "https://arxiv.org/pdf/2607.11098",
     photo: "research/agentcheck.png",
