@@ -246,7 +246,7 @@ export default function HomePage() {
                 </div>
 
                 {/* IAIO */}
-                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                {/* <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
                   <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="work/iaio.png?height=40&width=40"
@@ -260,12 +260,12 @@ export default function HomePage() {
                     <p className="text-xs text-muted-foreground truncate">International AI Olympiad</p>
                     <p className="text-xs text-muted-foreground">Sep 2025 - Present</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
             {/* Education Section */}
-            <div className="order-9 space-y-3 bg-card border rounded-lg p-4 w-full">
+            <div className="order-10 space-y-3 bg-card border rounded-lg p-4 w-full">
               <h3 className="font-semibold text-sm">Education</h3>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
@@ -295,7 +295,7 @@ export default function HomePage() {
                 <div className="flex gap-3">
                   <div className="w-16 h-16 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
-                      src={courseData.thumbnail}
+                      src={courseData.thumbnail ?? ""}
                       alt={courseData.title}
                       fill
                       className="object-cover"
@@ -315,8 +315,79 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Collaborations Section */}
+            {/* Academic Service Section */}
             <div className="order-8 space-y-3 bg-card border rounded-lg p-4 w-full">
+              <h3 className="font-semibold text-sm">Services</h3>
+              <div className="space-y-2">
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="/work/arr.png?height=40&width=40"
+                      alt="ACL Rolling Review"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Secondary Reviewer</p>
+                    <p className="text-xs text-muted-foreground truncate">ACL Rolling Review (ARR)</p>
+                    <p className="text-xs text-muted-foreground">2026</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="/work/iaio.png?height=40&width=40"
+                      alt="International AI Olympiad"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Judge and Instructor</p>
+                    <p className="text-xs text-muted-foreground truncate">International AI Olympiad</p>
+                    <p className="text-xs text-muted-foreground">2025,2026</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="/work/sts.png?height=40&width=40"
+                      alt="Scholastica International Tech Summit"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Judge</p>
+                    <p className="text-xs text-muted-foreground truncate">Scholastica International Tech Summit</p>
+                    <p className="text-xs text-muted-foreground">2026</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="/work/ndcit.png?height=40&width=40"
+                      alt="NDCIT National Hackathon"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Judge</p>
+                    <p className="text-xs text-muted-foreground truncate">NDCIT National Hackathon</p>
+                    <p className="text-xs text-muted-foreground">2026</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Collaborations Section */}
+            <div className="order-9 space-y-3 bg-card border rounded-lg p-4 w-full">
               <h3 className="font-semibold text-sm">Collaborations</h3>
               <div className="grid grid-cols-2 gap-3">
                 {/* University of Utah */}
@@ -480,7 +551,7 @@ export default function HomePage() {
 
             
             {/* Featured Projects Section */}
-            <div className="order-10 space-y-3 w-full">
+            <div className="order-11 space-y-3 w-full">
               <div className="flex items-center justify-between px-1">
                 <h3 className="font-semibold text-sm">Featured Projects</h3>
                 <Button asChild size="sm" className="bg-black hover:bg-black/80 text-white h-7 px-2" >
@@ -500,7 +571,7 @@ export default function HomePage() {
             </div>
 
             {/* Latest Blogs Section */}
-            <div className="order-11 space-y-3 w-full">
+            <div className="order-12 space-y-3 w-full">
               <div className="flex items-center justify-between px-1">
                 <h3 className="font-semibold text-sm">Latest Blogs</h3>
                 <Button asChild size="sm" className="bg-black hover:bg-black/80 text-white h-7 px-2" >
