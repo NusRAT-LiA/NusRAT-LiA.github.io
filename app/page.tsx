@@ -344,12 +344,29 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
+                  
                   <div className="min-w-0 flex-1">
                     <p className="text-xs font-medium truncate">Judge and Instructor</p>
                     <p className="text-xs text-muted-foreground truncate">International AI Olympiad</p>
                     <p className="text-xs text-muted-foreground">2025,2026</p>
                   </div>
                 </div>
+
+                <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
+                    <Image
+                      src="/work/nasa.png?height=40&width=40"
+                      alt="nasa"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-medium truncate">Coding Instructor</p>
+                    <p className="text-xs text-muted-foreground truncate">NASA Space Camp</p>
+                    <p className="text-xs text-muted-foreground">2026</p>
+                  </div>
+                  </div>
 
                 <div className="flex items-center gap-3 p-2 hover:bg-accent rounded-md transition-colors">
                   <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
