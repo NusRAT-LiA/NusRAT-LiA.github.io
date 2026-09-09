@@ -14,6 +14,21 @@ export default function WorkPage() {
 
   const positions = [
     {
+      id: "spar",
+      title: "Research Fellow",
+      organization: "SPAR AI (Supervised Program for Alignment Research) , Berkeley, CA",
+      logo: "work/spar.png?height=80&width=80",
+      startDate: "2026-09",
+      endDate: null,
+      type: "Academic",
+      description:  [
+        "Research: A dynamic Bayesian protocol to rank which multi-agent risks the safety field should prioritize.",
+      ],
+      link: "https://sparai.org/",
+      achievements: [
+      ],
+    },
+    {
       id: "ut",
       title: "Research Assistant",
       organization: "University of Toronto, CA (under Dr. Ishtiaque Ahmed)",
