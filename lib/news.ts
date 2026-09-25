@@ -13,6 +13,14 @@ export interface NewsItem {
 }
 
 export const news: NewsItem[] = [
+   {
+    date: "Sep 25, 2026",
+    content: [
+      { text: "AgentCollabBench" , href: "https://arxiv.org/pdf/2605.08647" , key:true},
+      { text: " has been Accepted to " },
+      { text: "NeurIPS'26!!!)", key: true },
+    ],
+  },
   {
     date: "Aug 20, 2026",
     content: [
@@ -21,7 +29,7 @@ export const news: NewsItem[] = [
       { text: "  , " },
       { text: "AgentCheck ",  href: "https://arxiv.org/pdf/2607.11098" },
       {text: "and" },
-      { text: " Register Shifts Break LLM Safety " ,  href: "https://banglallm.github.io/banglasafe/index.html" },
+      { text: " Register Shifts Break LLM Safety) " ,  href: "https://banglallm.github.io/banglasafe/index.html" },
       { text: "Accepted to " },
       { text: "EMNLP'26)", key: true },
     ],
