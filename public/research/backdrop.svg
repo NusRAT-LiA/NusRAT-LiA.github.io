@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.0mm" height="61.2mm" viewBox="0 0 760 612">
+  <!-- Section 6.1. Twin against compound pass rate over all attempts, the capable 16, from results_data.json. -->
+  <style>
+    text { font-family: Helvetica, Arial, sans-serif; font-size: 20px; fill: #2D3136; }
+    .end { text-anchor: end; }
+    .mid { text-anchor: middle; }
+    .sm  { font-size: 18px; }
+    .mute{ fill: #6B7280; }
+    .b   { font-weight: bold; }
+  </style>
+  <circle cx="8" cy="24" r="7" fill="#1A7F37"/>
+  <text x="22" y="30" class="b" fill="#1A7F37">twin</text>
+  <text x="74" y="30" class="mute">against</text>
+  <circle cx="160" cy="24" r="7" fill="#CF222E"/>
+  <text x="174" y="30" class="b" fill="#CF222E">compound</text>
+  <text x="282" y="30" class="mute">pass rate.</text>
+  <text x="8" y="58" class="mute">Every model loses, on average <tspan class="b" fill="#2D3136">38.2 points</tspan>.</text>
+  <line x1="226" y1="106" x2="226" y2="546" stroke="#D6DBE2" stroke-width="1.6"/>
+  <text x="226" y="96" class="mid sm mute">0</text>
+  <line x1="341" y1="106" x2="341" y2="546" stroke="#D6DBE2" stroke-width="1.6"/>
+  <text x="341" y="96" class="mid sm mute">25</text>
+  <line x1="456" y1="106" x2="456" y2="546" stroke="#D6DBE2" stroke-width="1.6"/>
+  <text x="456" y="96" class="mid sm mute">50</text>
+  <line x1="571" y1="106" x2="571" y2="546" stroke="#D6DBE2" stroke-width="1.6"/>
+  <text x="571" y="96" class="mid sm mute">75</text>
+  <line x1="686" y1="106" x2="686" y2="546" stroke="#D6DBE2" stroke-width="1.6"/>
+  <text x="686" y="96" class="mid sm mute">100</text>
+  <text x="760" y="96" class="end sm mute">gap</text>
+  <text x="204" y="134" class="end">Claude Fable 5.1</text>
+  <line x1="484" y1="128" x2="670" y2="128" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="484" cy="128" r="7.5" fill="#CF222E"/>
+  <circle cx="670" cy="128" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="134" class="end">40.6</text>
+  <text x="204" y="161" class="end">GPT-5.6 sol</text>
+  <line x1="362" y1="155" x2="652" y2="155" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="362" cy="155" r="7.5" fill="#CF222E"/>
+  <circle cx="652" cy="155" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="161" class="end">63.0</text>
+  <text x="204" y="188" class="end">Gemini 3.8 Flash</text>
+  <line x1="353" y1="182" x2="651" y2="182" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="353" cy="182" r="7.5" fill="#CF222E"/>
+  <circle cx="651" cy="182" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="188" class="end">64.9</text>
+  <text x="204" y="215" class="end">Claude Opus 5</text>
+  <line x1="437" y1="209" x2="651" y2="209" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="437" cy="209" r="7.5" fill="#CF222E"/>
+  <circle cx="651" cy="209" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="215" class="end">46.6</text>
+  <text x="204" y="242" class="end">GPT-6 astra</text>
+  <line x1="559" y1="236" x2="644" y2="236" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="559" cy="236" r="7.5" fill="#CF222E"/>
+  <circle cx="644" cy="236" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="242" class="end">18.3</text>
+  <text x="204" y="269" class="end">Claude Sonnet 5</text>
+  <line x1="381" y1="263" x2="608" y2="263" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="381" cy="263" r="7.5" fill="#CF222E"/>
+  <circle cx="608" cy="263" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="269" class="end">49.3</text>
+  <text x="204" y="296" class="end">GPT-5.6 terra</text>
+  <line x1="372" y1="290" x2="602" y2="290" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="372" cy="290" r="7.5" fill="#CF222E"/>
+  <circle cx="602" cy="290" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="296" class="end">50.0</text>
+  <text x="204" y="323" class="end">GPT-5.6 luna</text>
+  <line x1="401" y1="317" x2="592" y2="317" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="401" cy="317" r="7.5" fill="#CF222E"/>
+  <circle cx="592" cy="317" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="323" class="end">41.5</text>
+  <text x="204" y="350" class="end">GLM-5</text>
+  <line x1="334" y1="344" x2="528" y2="344" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="334" cy="344" r="7.5" fill="#CF222E"/>
+  <circle cx="528" cy="344" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="350" class="end">42.2</text>
+  <text x="204" y="377" class="end">Kimi K2.5</text>
+  <line x1="332" y1="371" x2="499" y2="371" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="332" cy="371" r="7.5" fill="#CF222E"/>
+  <circle cx="499" cy="371" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="377" class="end">36.3</text>
+  <text x="204" y="404" class="end">DeepSeek V3.2</text>
+  <line x1="329" y1="398" x2="496" y2="398" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="329" cy="398" r="7.5" fill="#CF222E"/>
+  <circle cx="496" cy="398" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="404" class="end">36.3</text>
+  <text x="204" y="431" class="end">MiniMax M2.5</text>
+  <line x1="320" y1="425" x2="457" y2="425" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="320" cy="425" r="7.5" fill="#CF222E"/>
+  <circle cx="457" cy="425" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="431" class="end">29.8</text>
+  <text x="204" y="458" class="end">Qwen3 235B</text>
+  <line x1="312" y1="452" x2="451" y2="452" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="312" cy="452" r="7.5" fill="#CF222E"/>
+  <circle cx="451" cy="452" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="458" class="end">30.3</text>
+  <text x="204" y="485" class="end">Qwen3.5 27B</text>
+  <line x1="313" y1="479" x2="447" y2="479" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="313" cy="479" r="7.5" fill="#CF222E"/>
+  <circle cx="447" cy="479" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="485" class="end">29.1</text>
+  <text x="204" y="512" class="end">Qwen3.5 35B-A3B</text>
+  <line x1="343" y1="506" x2="409" y2="506" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="343" cy="506" r="7.5" fill="#CF222E"/>
+  <circle cx="409" cy="506" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="512" class="end">14.4</text>
+  <text x="204" y="539" class="end">Qwen3.5 122B-A10B</text>
+  <line x1="292" y1="533" x2="378" y2="533" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="292" cy="533" r="7.5" fill="#CF222E"/>
+  <circle cx="378" cy="533" r="7.5" fill="#1A7F37"/>
+  <text x="760" y="539" class="end">18.8</text>
+  <text x="456" y="588" class="mid sm mute">pass rate over all attempts (%)</text>
+</svg>

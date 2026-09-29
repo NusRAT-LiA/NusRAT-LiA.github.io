@@ -20,6 +20,18 @@ export type Publication = {
 
 // Main research publications
 export const mainPublications: Publication[] = [
+      {
+    title: "The Backdrop Exposes What the World Around an Agent Costs It",
+    authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
+    affiliations: ["University of Dhaka", "University of Maryland, Baltimore County"],
+    venue: " ",
+    year: "2026",
+    arxiv: "",
+    photo: "research/backdrop.svg",
+    website: "https://nusrat-lia.github.io/BackDrop/"
+
+  },
+
     {
     title: "AGENTCOLLABBENCH: Diagnosing When Good Agents Make Bad Collaborators",
     authors: "Aritra Mazumder; Shubhashis Roy Dipta; Nusrat Jahan Lia; et al.",

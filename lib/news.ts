@@ -18,7 +18,7 @@ export const news: NewsItem[] = [
     content: [
       { text: "AgentCollabBench" , href: "https://arxiv.org/pdf/2605.08647" , key:true},
       { text: " has been Accepted to " },
-      { text: "NeurIPS'26!!!)", key: true },
+      { text: "NeurIPS'26!!!", key: true },
     ],
   },
   {
