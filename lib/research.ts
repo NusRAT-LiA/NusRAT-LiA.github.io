@@ -26,7 +26,7 @@ export const mainPublications: Publication[] = [
     affiliations: ["University of Dhaka", "University of Maryland, Baltimore County"],
     venue: " ",
     year: "2026",
-    arxiv: "",
+    arxiv: "https://arxiv.org/abs/2609.38469",
     photo: "research/backdrop.svg",
     website: "https://nusrat-lia.github.io/BackDrop/"
 
