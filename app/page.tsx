@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardDescription, CardTitle } from "@/components/ui/card"
 import { Github, Linkedin, Mail, ExternalLink, BookOpen, Users, Briefcase, FileText, ArrowRight, Github as GithubIcon, Presentation, Flame } from "lucide-react"
+import { GoogleScholarIcon } from "@/components/google-scholar-icon"
 import Image from "next/image"
 import Link from "next/link"
 import Blog from "./blog/page"
 import Courses from "./courses/page"
 import Work from "./work/page"
-import Research from "./research/page"
+import { ResearchContent } from "@/components/research-content"
 import Projects from "./projects/page"
 import Life from "./life/page"
 import {
@@ -422,10 +423,10 @@ export default function HomePage() {
             {/* Collaborations Section */}
             <div className="order-9 space-y-3 bg-card border rounded-lg p-4 w-full">
               <h3 className="font-semibold text-sm">Collaborations</h3>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-3 gap-2">
                 {/* University of Utah */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/utah.png?height=48&width=48"
                       alt="University of Utah"
@@ -433,12 +434,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">University of Utah</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">University of Utah</p>
                 </div>
 
                 {/* University of Maryland, Baltimore County */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/umbc.png?height=48&width=48"
                       alt="UMBC"
@@ -446,12 +447,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">UMBC</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">UMBC</p>
                 </div>
 
                 {/* University of Virginia */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/uva.png?height=48&width=48"
                       alt="University of Virginia"
@@ -459,12 +460,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">University of Virginia</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">University of Virginia</p>
                 </div>
 
                 {/* World Health Organization */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/who.png?height=48&width=48"
                       alt="World Health Organization"
@@ -472,12 +473,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">WHO</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">WHO</p>
                 </div>
 
                 {/* Stony Brook University */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/stonybrook.png?height=48&width=48"
                       alt="Stony Brook University"
@@ -485,12 +486,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Stony Brook University</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Stony Brook University</p>
                 </div>
 
                 {/* Seattle Children's Research Institute */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/seattle.png?height=48&width=48"
                       alt="Seattle Children's Research Institute"
@@ -498,12 +499,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Seattle Children&apos;s</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Seattle Children&apos;s</p>
                 </div>
 
                 {/* University of Washington */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/uw.png?height=48&width=48"
                       alt="University of Washington"
@@ -511,12 +512,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Univ. of Washington</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Univ. of Washington</p>
                 </div>
 
                 {/* State University of New York, Old Westbury */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/suny.png?height=48&width=48"
                       alt="SUNY Old Westbury"
@@ -524,12 +525,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">SUNY Old Westbury</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">SUNY Old Westbury</p>
                 </div>
 
                 {/* Toronto Metropolitan University */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/toronto.png?height=48&width=48"
                       alt="Toronto Metropolitan University"
@@ -537,12 +538,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Toronto Metro Univ.</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Toronto Metro Univ.</p>
                 </div>
 
                 {/* University of Geneva */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/geneva.png?height=48&width=48"
                       alt="University of Geneva"
@@ -550,12 +551,12 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">University of Geneva</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">University of Geneva</p>
                 </div>
 
                 {/* Imperial College London */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/imperial.png?height=48&width=48"
                       alt="Imperial College London"
@@ -563,12 +564,12 @@ export default function HomePage() {
                       className="object-contain"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Imperial College London</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Imperial College London</p>
                 </div>
 
                 {/* Purdue University */}
-                <div className="flex flex-col items-center gap-2 p-2 border rounded">
-                  <div className="w-12 h-12 flex-shrink-0 relative overflow-hidden rounded">
+                <div className="flex flex-col items-center gap-1.5 p-1.5 border rounded min-w-0">
+                  <div className="w-10 h-10 flex-shrink-0 relative overflow-hidden rounded">
                     <Image
                       src="collab/purdue.png?height=48&width=48"
                       alt="Purdue University"
@@ -576,7 +577,7 @@ export default function HomePage() {
                       className="object-contain"
                     />
                   </div>
-                  <p className="text-[10px] font-medium text-center truncate">Purdue University</p>
+                  <p className="w-full text-[10px] font-medium text-center leading-tight line-clamp-2">Purdue University</p>
                 </div>
 
               </div>
@@ -631,18 +632,18 @@ export default function HomePage() {
 
             <div className="order-3 text-sm text-muted-foreground leading-relaxed">
               <p className="mb-6">
-                My work lies in <strong>intelligent agents,</strong><strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
+                My work lies in <strong>intelligent agents,</strong><strong> natural language processing, human-centered applications and secured decentralized systems.</strong>
               </p>
               <p className="mb-6">
-                I have started working as a <strong>Research Assistant</strong> at the <strong>University of Toronto</strong> (working with Dr. Ishtiaque Ahmed and Sheza Munir); and a <strong>Research Fellow</strong> at <strong>Spar AI, Berkeley</strong> and <strong>Fatima Institute for Global AI Research, California</strong>.
+                I am a <strong>Research Assistant</strong> at the <strong>University of Toronto</strong> (working with Dr. Ishtiaque Ahmed); and a <strong>Research Fellow</strong> at <strong>Spar AI, Berkeley</strong> and <strong>Fatima Institute for Global AI Research, California</strong>.
               </p>
               <p className="mb-6">
-               I was a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong>.
+               I was a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked for the <strong>United States Department of Justice - ICITAP</strong>. 
               </p>
 
              
               <p className="mb-6">
-              I recently graduated (Top 5) with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I worked on <strong>low-resource and small-language-model development</strong>. I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
+              I recently graduated (Top 5) with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I worked in BARTA Lab (low-resource and small-language-model development). I serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course</strong> . I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>, and a <strong>Judge</strong> at BDAIO.
               </p>
 
               <p className="mb-6">
@@ -654,16 +655,14 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="order-11 flex flex-wrap gap-4">
+            <div className="order-11 flex flex-wrap items-center gap-4">
               <Button asChild>
                 <Link href="/contact">
                   <Mail className="w-4 h-4 mr-2" />
                   Get in Touch
                 </Link>
               </Button>
-            </div>
 
-            <div className="order-12 flex gap-4">
               <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="w-5 h-5" />
               </Link>
@@ -671,15 +670,15 @@ export default function HomePage() {
               <Link href="https://www.linkedin.com/in/nusrat-jahan-lia-608655229/" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Link>
-              
-              <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground">
-                <BookOpen className="h-4 w-4" />
+
+              <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground transition-colors">
+                <GoogleScholarIcon className="w-5 h-5" />
               </Link>
             </div>
 
             {/* Research Section */}
-            <div className="order-5 pt-6">
-              <Research/>
+            <div className="order-5">
+              <ResearchContent embedded />
             </div>
           </div>
         </div>

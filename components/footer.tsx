@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail, BookOpen, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
+import { GoogleScholarIcon } from "@/components/google-scholar-icon"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -25,7 +26,7 @@ export function Footer() {
                 <Twitter className="h-4 w-4" />
               </Link>
               <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground">
-                <BookOpen className="h-4 w-4" />
+                <GoogleScholarIcon className="h-4 w-4" />
               </Link>
               <Link href="mailto:bsse1306@iit.du.ac.bd" className="text-muted-foreground hover:text-foreground">
                 <Mail className="h-4 w-4" />

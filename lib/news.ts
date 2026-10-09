@@ -13,6 +13,27 @@ export interface NewsItem {
 }
 
 export const news: NewsItem[] = [
+
+  {
+    date: "Oct 8, 2026",
+    content: [
+      { text: "Google DeepMind", key:true },
+      {text:" invited "},
+      { text: "AgentCollabBench", href: "https://arxiv.org/pdf/2605.08647", key: true },
+      { text: " for an upcoming talk in San Francisco." }
+    ]
+  },
+  {
+    date: "Oct 6, 2026",
+    content: [
+      { text: "Microsoft" , key:true},
+      {text:" invited "},
+      { text: "AgentCollabBench", href: "https://arxiv.org/pdf/2605.08647", key: true },
+      { text: " for an upcoming talk." }
+    ]
+  },
+
+
    {
     date: "Sep 25, 2026",
     content: [
@@ -40,9 +61,7 @@ export const news: NewsItem[] = [
       { text: "Joined as an RA at the " },
       { text: "University of Toronto", key: true },
       { text: " under " },
-      { text: "Prof. Ishtiaque Ahmed ", key: true, href: "https://www.cs.toronto.edu/~ishtiaque/" },
-      { text: " and " },
-      { text: "Sheza Munir", href: "https://www.cs.toronto.edu/~sheza/" },
+      { text: "Prof. Ishtiaque Ahmed ", key: true, href: "https://www.cs.toronto.edu/~ishtiaque/" }
    
     ],
   },
