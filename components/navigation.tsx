@@ -19,7 +19,6 @@ const navigation = [
   { name: "Blog", href: "/blog" },
   // { name: "Contact", href: "/contact" },
   { name: "Personal", href: "/life" },
-  { name: "CV", href: "/cv" },
 ]
 
 export function Navigation() {
